@@ -40,7 +40,7 @@ jobs:
           docker push ${{ secrets.USERNAME }}/flask-demo:${{ github.sha }}
 
       - name: Trigger CI
-        uses: InformaticsMatters/trigger-ci-action@1.0.1
+        uses: informaticsmatters/trigger-ci-action@v1
         with:
           ci-owner: caiyuanji
           ci-repository: flask-demo-kustomize
